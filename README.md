@@ -16,6 +16,8 @@ Blog using Flask, mongodb and docker
 Flask + MongoDB + Bootstrap + Docker
 
 ### Features
+All from Basics + Advanced (excluding post images) + 1st of the Challenging
+
 - [x] Responsive design
 - [x] Authentication (Login + Signup + Logout)
 - [x] password hashing
