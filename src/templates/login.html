@@ -1,0 +1,41 @@
+{% extends('base.html') %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="card" id="form1">
+                <div class="card-header">
+                    Login
+                </div>
+                <div class="card-body shadow-sm px-5 py-5">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username"
+                                   aria-describedby="usernameHelp" placeholder="Enter username">
+                            <small id="usernameHelp" class="form-text text-muted">Example: user007</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password"
+                                   aria-describedby="passwordHelp" placeholder="Enter password">
+                        </div>
+
+                        <div class="mt-4 d-grid gap-2">
+                            <button class="btn btn-primary" type="submit">Login</button>
+                        </div>
+
+                        <div class="mt-4 d-grid gap-2">
+                            <a class="btn btn-secondary" href="/signup">or signup</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

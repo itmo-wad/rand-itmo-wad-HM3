@@ -1,0 +1,19 @@
+{% extends('base.html') %}
+
+{% block title %}
+    Posts
+{% endblock %}
+
+{% block content %}
+    <div class="row d-flex justify-content-center">
+        {% for post in posts %}
+            {% if (session['username'] and post.privacy == 'private') or post.privacy == 'public' %}
+                <div class="col-md-4 pt-4">
+                    {% with post=post %}
+                        {% include 'post_card.html' %}
+                    {% endwith %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

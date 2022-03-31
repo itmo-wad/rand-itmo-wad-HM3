@@ -1,0 +1,32 @@
+<div class="card shadow-sm">
+    <div class="card-header">
+        <form action="/delete_post" method="post">
+            <input type="hidden" value="{{ post._id }}" name="id">
+            <button class="btn btn-sm btn-danger" type="submit">
+                <i class="fas fa-trash"></i>
+            </button>
+            {{ post.title }}
+        </form>
+    </div>
+    <div class="card-body">
+        {% if post.owner %}
+            <p>
+                <i class="fas fa-user"></i>
+                <strong>Author:</strong>
+                {{ post.owner[0].name }}
+            </p>
+            <p>
+                <i class="fas fa-shield-alt"></i>
+                <strong>Privacy:</strong>
+                {{ post.privacy }}
+            </p>
+        {% endif %}
+        {{ post.description }}
+    </div>
+    {% if post.created_at %}
+        <div class="card-footer text-muted">
+            <i class="fas fa-clock"></i>
+            {{ post.created_at.strftime("%Y-%m-%d %H:%M") }}
+        </div>
+    {% endif %}
+</div>

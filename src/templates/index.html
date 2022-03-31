@@ -1,0 +1,26 @@
+{% extends('base.html') %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h1 class="h2 fw-bold">
+                            Welcome to my blog
+                        </h1>
+                    </div>
+                    <h4 class="h6">
+                        login and start add and view private posts...
+                    </h4>
+                    <a class="mt-4 btn btn-primary d-grid" href="/login">Login</a>
+                    <a class="mt-2 btn btn-secondary d-grid" href="/signup">Signup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
