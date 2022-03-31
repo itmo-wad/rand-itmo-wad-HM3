@@ -4,6 +4,8 @@
    * [Description](#Description)
    * [Technologies](#Technologies)
    * [Features](#Features)
+   * [ToDo](#ToDo)
+   * [Run](#Run)
    * [Screenshots](#Screenshots)
 <!--te-->
 
